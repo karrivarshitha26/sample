@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Home page</title>
+    <style>
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #caffe8;
+}
+.navbar {
+  overflow: hidden;
+  background-color: aquamarine;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #caffe8;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aquamarine;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body style="background-color:white">
+    <center><h1 style="background-color: #caffe8; margin: 0px;">Home page<br>
+    Welcome to GMR Institute Of Technology, Rajam</h1>
+    <div class="navbar">
+      <b><a href="registration.html">Registration</a>
+      <a href="test.html">Test</a>
+      <a href="results.html">Results</a>
+      <div class="dropdown">
+        <button class="dropbtn">Login</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="login_student.html">Student Login</a>
+            <a href="login_admin.html">Admin Login</a>
+          </div>  
+      </div> 
+    </div>
+<img style="background-repeat: no-repeat;" src="image2.jpg">
+</center>
+</body>
+</html>
+
+   

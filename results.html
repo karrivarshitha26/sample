@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student login page</title>
+</head>
+<style>
+  p{
+    font-family: courier;
+  font-size: 80%;
+  }
+  body{
+    background-color: #caffe8;
+  }
+.form{
+  background-color: aquamarine;
+  max-width: 300px;
+  margin: 200px auto 200px;
+  padding: 10px 45px 30px 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+h1{
+    text-align: center;
+    background-color: aquamarine;
+}
+    .box{
+  /* align-items: center; */
+  width: 350px;
+  height:310px;  
+  padding: 10px;
+  border: 10px solid;
+  border-color: aquamarine;
+  border-style: hidden;
+  margin-top:10%;
+  margin-left:35%;
+}
+.button{
+	  border-radius:10px;
+    border-width:0px;
+    background-color:aquamarine;
+    color:black;
+    /* size: 500px; */
+    height:30px;
+    width:100px;
+}
+</style>
+<script>
+  function studentlogin() {
+            var un = document.getElementById("uname").value;
+            var pas = document.getElementById("password").value;
+            
+            if (un === "ADMIN" && pas === "admin888") 
+            {
+                window.location.href = "test.html";
+            } 
+            else if(pas == "") 
+            {  
+              alert("Fill the password please!");   
+            } 
+            else if(pas.length<6)
+            {
+              alert("Password length must be atleast 8 characters");
+            } 
+            // else if(isNaN(uname))
+            // {
+            //   alert("please enter username");
+            // }
+            else if(unanme != ADMIN)
+            {
+             alert("USERNAME NOT EXIST") 
+            }
+            else 
+            {
+                alert("Unsuccessfull login");
+            } 
+      }
+</script>
+<body>  
+<div class="box">
+        <h1>Student Login Page</h1>
+        <label><b>UserName&nbsp;</b></label>
+        <input type="text" style="width:50%" id="uname" required><br><br>
+        
+        <label><b>Password&nbsp;&nbsp;</b></label>
+        <input type="password" style="width:50%" id="password" required><br><br>
+      
+        <input type="checkbox" checked="checked">
+        <label>Stay logged in</label><br><br>
+        <button class="button" onclick="studentlogin()"><b>Login</b></button><br>
+        <p>Not registered? <a href="registration.html">Register</a></p>
+</div>
+</body> 
+</html>
